@@ -1,0 +1,19 @@
+<div class="add">
+    <input [(ngModel)]="searchName" placeholder="Search"/>
+    <button (click)="search()" class="addButton searchButton">🔎</button>
+    <button (click)="addPost()" class="addButton" title="Create a new post">&plus;</button>
+</div>
+
+<div class="elements">
+    <div *ngFor="let item of posts" class="posting" (click)="openPost(item.id)">
+        <div class="post">
+            <div class="text">
+                <p class="title">{{ item.title }}</p>
+                <p class="author">Author: {{item.username}}</p>
+            </div>
+            <div class="actions">
+                <button (click)="deletePost(item.id, $event)" class="deleteButton">&times;</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,109 @@
+* {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.add, .posting {
+    width: fit-content;
+    margin: auto;
+}
+
+.posting {
+    padding: 10px;
+    /* border: 3px solid rgb(255, 198, 91); */
+    border-left: 3px solid rgb(253, 53, 53);
+    border-right: 3px solid rgb(92, 108, 255);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0 10px rgb(50, 50, 50);
+    width: min(100%, 500px);
+    box-sizing: border-box;
+    background-color: rgb(95, 95, 95);
+    transition: 0.2s;
+}
+
+.posting:hover {
+    cursor: pointer;
+    background-color: rgb(85, 85, 85);
+    transform: scale(1.05);
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    background-color: inherit;
+}
+
+.text {
+    margin-right: 10px;
+    width: min(95%, 450px);
+    background-color: inherit;
+}
+
+.title {
+    margin-bottom: 5px;
+    background-color: inherit;
+}
+
+.author {
+    color: rgb(201, 201, 201);
+    font-size: 13px;
+    background-color: inherit;
+}
+
+.elements {
+    margin-top: 30px;
+}
+
+input, .addButton {
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin: 5px;
+    border: 3px solid rgb(109, 109, 247);
+    box-shadow: 0px 0 10px rgb(50, 50, 50);
+}
+
+.addButton {
+    padding: 10px 16px;
+}
+
+.searchButton {
+    padding: 10px 14px;
+}
+
+input {
+    color: white;
+}
+
+.actions {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    height: max-content;
+    background-color: transparent;
+}
+
+.deleteButton {
+    border: none;
+    padding: 3px 9px;
+    transition: 0.2s;
+    border-radius: 100px;
+    height: fit-content;
+    background-color: inherit;
+}
+
+.deleteButton:hover {
+    background-color: rgb(47, 47, 47);
+    cursor: pointer;
+}
+
+.addButton:hover {
+    background-color: rgb(66, 66, 66);
+    cursor: pointer;
+}
+
+.viewButton:hover {
+    background-color: rgb(85, 85, 200);
+    cursor: pointer;
+}
